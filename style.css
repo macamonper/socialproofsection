@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+    font-size: 1em;
+}
+html{
+    background-image: url(/images/bg-pattern-top-desktop.svg) ;
+    background-repeat: no-repeat;
+
+}
+
+body{
+    background-image: url(/images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 120%;
+    width: 100%;
+    padding: 5%  0%;
+
+}
+p{
+    line-height: 1.4em;
+}
+
+/* PRESENTACION*/
+.contenedor{
+    display: flex;
+    padding: 5em;
+    justify-content: space-between;
+
+}
+
+.presentacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    color:hsl(300, 43%, 22%);
+}
+h1{
+    color:  hsl(300, 43%, 22%);
+    font-weight:700 ;
+    font-size: 50px;
+
+    margin-bottom: 0.7em;
+}
+
+.texto1{
+    font-size: 15px;
+    font-weight: 500;
+    color: #927B91;
+    line-height: 25px;
+}
+
+/*FIN PRESENTACION*/
+
+/*RATING*/
+.rating{
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+    align-items: flex-start;
+}
+.cajita{
+    border: 1px solid hsl(300, 24%, 96%);
+    border-radius: 5%;
+    background-color: hsl(300, 24%, 96%);
+    margin: 0.5em;
+    padding: 0.5em 5em 0.5em 0.5em;    
+    display: flex;
+    
+}
+
+.margen{
+    margin-left: 2em;
+    font-size: 14px;
+    font-weight: bold;
+    color:hsl(300, 43%, 22%);
+}
+.dos{
+    position: relative;
+    left:40px ;
+}
+.tres{
+    position: relative;
+    left: 80px;
+}
+/*FIN RATING*/
+
+/*REVIEW*/
+
+
+.review{
+    display: flex;
+    padding-left:5em ;
+    padding-right: 5em;
+    padding-bottom: 6.25rem;
+    justify-content: space-between;
+
+}
+.caja{
+    height: 14.3em;
+    width: 21.75em;
+    border-radius: 5%;
+    border:1px solid  hsl(300, 43%, 22%);
+    background-color: hsl(300, 43%, 22%);
+  
+}
+.caja2{
+    position: relative;
+    top: 1.25em;
+}
+
+.caja3{
+    position: relative;
+    top:2.5em;
+}
+
+#avatar{
+    width: 40px;
+    border-radius: 50px;
+    margin: 40px 0 0 30px;
+    position: absolute
+}
+
+.nombre{
+    margin-left: 100px;
+    margin-top: 40px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+
+}
+.verified{
+    margin-left: 100px;
+    margin-top: 3px;
+    color:#ff69b4 ;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.comentario{
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.23px;
+    color: #ffffff;
+    margin-top: 35px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+/*FIN COMENTARIOS*/
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 375px){
+
+.contenedor{
+    max-width: 375px;
+    
+}
